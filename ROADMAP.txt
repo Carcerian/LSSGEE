@@ -1,0 +1,261 @@
+ARCANA ROADMAP: The Future of Lilac Soul's Generator
+=====================================================
+
+================================================================================
+v1.0 "The Revival" ✓ RELEASED
+================================================================================
+Release Date: June 30, 2024
+Status: Stable, production-ready
+
+Completed:
+  ✓ EE compatibility with 425+ spell constants
+  ✓ SQLiteGen v1.0 (Module and Campaign scope)
+  ✓ Clean rebuild for Lazarus 4.8 / FPC 3.2.2
+  ✓ Full documentation and attribution
+  ✓ Open source GPL v2 release
+
+Known Limitations (By Design):
+  - Object-scoped SQLite (deferred to v1.1)
+  - NUI generators (deferred to v2.0)
+  - Linux/macOS binaries (pending cross-compilation setup)
+
+================================================================================
+v1.1 "Enhanced EE" (Early 2025, ~Q1)
+================================================================================
+Timeline: 6-8 weeks after v1.0 release
+Focus: Complete the SQLite feature set for persistent data
+
+NEW FEATURES
+-----------
+
+1. Object-Scoped SQLite Queries
+   - Persistent data tied to specific creatures/placeables
+   - Survive creature death (stored externally, restored on respawn)
+   - Use case: NPC relationship tracking, quest progress per target
+   - UI: Radio button option (Object / Module / Campaign scope)
+   - Complexity: Medium (requires object reference tracking)
+
+2. UUID Lookup Generator
+   - Generate unique IDs for persistent object identification
+   - Assign UUID to creature on spawn
+   - Store UUID → object mapping in database
+   - Retrieve object by UUID across saves/transitions
+   - Use case: Quest markers, companion tracking, persistent relationships
+   - Output: Clean generator with one click → add UUID assignment to scripts
+   - Complexity: Medium
+
+3. Effects Fold-In
+   - VFX constant additions to existing effect generators
+   - Add visual effect type dropdowns to "Apply Effect" generator
+   - Pre-built combinations (e.g., "Healing + Blue Light", "Damage + Red Spark")
+   - Use case: Faster effect creation with visual feedback
+   - Complexity: Low (data-driven, UI extension)
+
+4. Enhanced Documentation
+   - Video tutorial: Using SQLiteGen (5-10 min)
+   - Database schema reference: How persistent storage works
+   - Advanced guide: Combining SQLiteGen + Carcerian's Tailor
+   - FAQ: Common questions about scope and persistence
+   - Complexity: Low (documentation only)
+
+5. Linux Binary Distribution
+   - Cross-compile scriptgenerator.exe for Linux
+   - Distribute as AppImage or native binary
+   - No feature changes, binary-only
+   - Complexity: Medium (build infrastructure)
+
+TECHNICAL WORK
+--------------
+- Refactor SQLite generator into reusable components
+- Extend constants.pas with UUID constant family (if needed)
+- Add object-reference tracking unit
+- Linux build pipeline setup (Lazarus → AppImage)
+
+TESTING
+-------
+- Module-scope SQLite: existing tests remain valid
+- Campaign-scope SQLite: existing tests remain valid
+- Object-scope SQLite: new test coverage (create/query/cleanup)
+- UUID generator: create/retrieve/persist cycle validation
+- Effects fold-in: verify generated code compiles and runs
+
+RELEASE CRITERIA
+----------------
+- All tests pass (Windows, Linux)
+- Documentation complete and reviewed
+- One community tester confirms real-world usage
+- No regressions in v1.0 generators
+
+================================================================================
+v2.0 "The Platform" (Mid 2025, ~Q2-Q3)
+================================================================================
+Timeline: 8-12 weeks after v1.1 release
+Focus: Major architectural expansion (NUI, JSON, schema builder)
+
+NEW FEATURES
+-----------
+
+1. NUI Popup Generator ⭐ (Major Feature)
+   - Wait for: NUI API v1.0 stability (minimum 6 months post-v1.1)
+   - Generate: PopupWindow, PopupMenu, PopupChart, PopupForm scripts
+   - UI: Visual builder for popup layouts (drag-drop controls)
+   - Output: Complete NWScript NUI initialization and binding code
+   - Use case: Advanced UIs without hand-coding NUI bindings
+   - Complexity: High (entirely new subsystem)
+
+2. JSON Serialization Generator
+   - Generate: JSON-based data export/import
+   - Use case: Export player data to JSON, reload custom configs
+   - Functions: GenerateJSON(), ParseJSON() helpers
+   - Complexity: Medium (JSON library integration)
+
+3. SQLite Schema Builder ⭐ (Major Feature)
+   - GUI tool: Define tables, columns, constraints visually
+   - Output: DDL script to initialize databases
+   - Use case: Design custom persistent storage schemas without SQL
+   - Complexity: High (UI for database design)
+
+4. Visual Theme Customization
+   - Color picker: Change UI colors (lilac → custom)
+   - Font selector: Choose code font, size, style
+   - Theme save/load: User preferences persistent
+   - Built-in themes: Dark mode, light mode, classic
+   - Complexity: Low (UI framework feature)
+
+5. macOS Native Binary
+   - Compile for macOS via Lazarus
+   - Code-sign and notarize
+   - Distribute via DMG installer
+   - Complexity: Medium (macOS build infrastructure)
+
+ARCHITECTURAL CHANGES
+---------------------
+- Plugin system: Allow third-party generator packages
+- Extended generator API: Base classes for custom generators
+- Settings persistence: User preferences and recent projects
+- Project file format: Save generator configurations for reuse
+
+TESTING
+-------
+- NUI generator: Full NUI binding cycle with test popups
+- JSON generator: Serialization round-trip validation
+- Schema builder: DDL generation and database initialization
+- Theme system: All themes render correctly across platforms
+- macOS binary: Native compilation and runtime testing
+
+RELEASE CRITERIA
+----------------
+- NUI API confirmed stable (minimum 6 months real-world usage)
+- All tests pass (Windows, Linux, macOS)
+- Plugin system documented with example
+- One community tester creates custom plugin successfully
+
+================================================================================
+v2.1+ "Maturity & Polish" (Late 2025+, Q4+)
+================================================================================
+Timeline: Ongoing after v2.0 release
+Focus: Stability, performance, community contribution
+
+PLANNED FEATURES
+----------------
+- Advanced persistence: Encryption, versioning, backup/restore
+- Integrated script testing: Compile + quick test harness
+- Performance profiling: Analyze generated script efficiency
+- Community plugin marketplace: Share custom generators
+- CEP optional integration: Database of CEP items/creatures/spells
+- Accessibility improvements: High contrast, keyboard navigation
+
+LONG-TERM GOALS
+---------------
+- Tool becomes the standard for NWN:EE builders (same as Lilac → NWN1 era)
+- Active community contribution and plugin development
+- Multiple platform support mature and reliable
+- Documentation evolves with user feedback
+
+================================================================================
+FUTURE CONSIDERATIONS (Post-v2.1)
+================================================================================
+
+Not Planned (Out of Scope):
+  ✗ NWN1 (original) support — focus on EE only
+  ✗ Mobile app versions — desktop tool only
+  ✗ Commercial licensing — GPL v2 perpetual
+  ✗ Server-side generators — client-side only
+  ✗ Integration with Neverwinter game server — local dev tool
+
+Potential (If Community Interest):
+  ? Enhanced AI behavior generator (complex)
+  ? Multiplayer synchronization helper (infrastructure-heavy)
+  ? Dynamic dungeon generator (procedural content)
+  ? Streaming content manager (asset pipeline)
+
+================================================================================
+RELEASE SCHEDULE
+================================================================================
+
+v1.0: June 30, 2024 ✓ RELEASED
+v1.1: Early 2025 (Q1) — 6-8 weeks from v1.0
+  - Target: February/March 2025
+  - Milestone: Complete SQLite feature set
+
+v2.0: Mid 2025 (Q2-Q3) — 8-12 weeks from v1.1
+  - Target: April-June 2025 (dependent on NUI API stability)
+  - Milestone: NUI + JSON + Schema builder
+
+v2.1+: Late 2025+ (Q4+) — Ongoing
+  - Continuous updates based on community feedback
+  - Feature prioritization by user requests
+
+(Timeline subject to change based on community feedback and resource availability)
+
+================================================================================
+HOW TO CONTRIBUTE
+================================================================================
+
+Feedback & Feature Requests
+  - Test v1.0 thoroughly
+  - Report bugs with reproduction steps
+  - Vote on features you want (create issue on GitHub)
+  - Share use cases that would benefit from new generators
+
+Code Contributions
+  - Fork the repository on GitHub
+  - Create a feature branch
+  - Follow existing code style and patterns
+  - Submit pull request with clear description
+  - Maintain GPL v2 license compliance
+
+Documentation
+  - Improve README or CHANGELOG
+  - Write tutorials or guides
+  - Create video walkthroughs
+  - Suggest clearer explanations
+
+Testing
+  - Test on Windows, Linux, macOS (if available)
+  - Try edge cases and unusual configurations
+  - Verify generated code compiles and runs
+  - Report platform-specific issues
+
+================================================================================
+PHILOSOPHY
+================================================================================
+
+Arcana follows Lilac Soul's original vision:
+  1. **Accessibility:** Novice builders should generate correct NWScript
+  2. **Transparency:** Generated code should be readable and understandable
+  3. **Extensibility:** Advanced users can modify and extend generators
+  4. **Stability:** Core features work reliably; new features tested thoroughly
+  5. **Community:** Tool is free, open source, belongs to the community
+
+This roadmap serves the community, not vice versa. Priorities adjust based on
+what builders actually need and use.
+
+================================================================================
+
+Questions about the roadmap?
+  Visit: https://github.com/Carcerian/EE/issues
+  Or contact the maintainer through project channels.
+
+Arcana v1.0 — Built with precision, released with care.
+Long live Lilac Soul's legacy.

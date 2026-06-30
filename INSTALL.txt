@@ -1,0 +1,221 @@
+ARCANA v1.0 — INSTALLATION & SETUP GUIDE
+==========================================
+
+Quick Start (Users)
+===================
+
+STEP 1: Locate the executable
+  - Unzip the distribution
+  - Navigate to: linux/ folder
+  - Find: scriptgenerator.exe
+  
+  Note: The folder is named "linux" for legacy reasons (The Krit's original
+  build path). This is the Windows executable and runs fine on Windows.
+
+STEP 2: Run for the first time
+  - Double-click scriptgenerator.exe
+  - On first launch, you'll be prompted for your NWN:EE installation folder
+  - Navigate to your main NWN directory (where nwnmain.exe is located)
+  - Click OK
+  
+  Typical paths:
+    C:\Program Files\Neverwinter Nights Enhanced Edition\
+    C:\Program Files (x86)\Neverwinter Nights Enhanced Edition\
+    C:\GOG Games\Neverwinter Nights Enhanced Edition\
+
+STEP 3: Choose a generator
+  - Main menu shows 30+ generators
+  - Click any generator name to open its form
+  - Configure your script (dropdowns, text fields, buttons)
+  - Click "Add to Script" or "Next" to generate NWScript code
+  - Code appears in the main window's text area
+
+STEP 4: Save and test
+  - File menu → "Save Script"
+  - Choose a .nss filename
+  - Place in your module's scripts folder
+  - Test compile in your NWN module editor
+  - If code errors: report with exact error message
+
+TROUBLESHOOTING
+---------------
+
+Q: "NWN installation not found"
+A: The tool asks for your main NWN:EE folder on first run.
+   Options → "Locate Neverwinter Nights manually" to reconfigure.
+   Point to the folder containing nwnmain.exe.
+
+Q: "Script won't compile in NWN"
+A: Generated code is syntactically correct. Check that:
+   1. You're using NWN:EE (original NWN1 may be missing functions)
+   2. Function exists in your NWN version (not all feats/spells in basic install)
+   3. Syntax matches NWScript conventions (copy into script editor, not .nss file directly)
+
+Q: "I don't recognize a function in the generated code"
+A: Check NWScript documentation or CHANGELOG.txt in this distribution.
+   Most functions are from Bioware's NWN API. SQLiteGen functions (SqlPrepareQuery, etc.)
+   require EE version 8.320.39 or later.
+
+Q: "Can I modify the generated code?"
+A: Yes! Generated code is just NWScript. Edit it freely to suit your needs.
+   The generator creates a good starting point; customize as needed.
+
+================================================================================
+
+For Developers
+==============
+
+BUILD FROM SOURCE
+-----------------
+
+Requirements:
+  - Lazarus IDE 4.8 or later (https://www.lazarus-ide.org)
+  - Free Pascal (FPC) 3.2.2 (included with Lazarus)
+  - Windows, Linux, or macOS
+
+Steps:
+  1. Extract the zip to a folder
+  2. Open Scriptgen.lpi in Lazarus
+  3. Project → Build Project (or Ctrl+F9)
+  4. Output: linux/scriptgenerator.exe
+  
+  Note: Output folder name ("linux") is legacy; use any OS.
+
+Cross-Platform Compilation:
+  - Windows to Linux: Requires Linux cross-compiler (complex setup)
+  - Windows to macOS: Requires macOS SDK (Apple developer tools)
+  - For v1.0, recommend compiling on target OS when possible
+
+Custom Generators:
+  - Each generator is a .pas unit with a corresponding .lfm form
+  - Pattern: [name].pas (logic) + [name].lfm (UI)
+  - Register in Scriptgen.lpr uses clause
+  - See sqlitegen.pas and sqlitegen.lfm for v1.0 example
+  - Documentation: README.md section on other generators
+
+================================================================================
+
+PROJECT STRUCTURE
+=================
+
+Arcana_v1.0_Complete/
+├── scriptgenerator.exe      ← Run this (Windows)
+├── scriptgenerator (Linux)  ← Run this (Linux, if built)
+├── README.md                ← User guide (START HERE)
+├── LICENSE.txt              ← GPL v2.0
+├── CHANGELOG.txt            ← Version history & credits
+├── ROADMAP.txt              ← Future features
+├── PHASE3_POLISH.txt        ← UI polish checklist
+├── INSTALL.txt              ← This file
+│
+├── lstk_scriptgen169_source/
+│   ├── Scriptgen.lpi        ← Lazarus project file (open to build)
+│   ├── Scriptgen.lpr        ← Main program unit
+│   ├── start.pas            ← Main form
+│   ├── sqlitegen.pas        ← SQLiteGen v1.0 (new in v1.0)
+│   ├── sqlitegen.lfm        ← SQLiteGen form layout
+│   ├── constants.pas        ← NWScript constants (EE refreshed)
+│   ├── constants_generated.inc ← Generated symbol tables
+│   ├── [30+ generator units] ← Effect, Creature, Placeable, etc.
+│   ├── nwn.pas              ← NWN utility functions
+│   └── [other infrastructure]
+│
+└── linux/                   ← Output folder (legacy name)
+    └── scriptgenerator.exe  ← Compiled binary
+
+================================================================================
+
+VERSION INFORMATION
+===================
+
+Arcana v1.0 "The Revival"
+  Release Date: June 30, 2024
+  License: GNU GPL v2.0
+  Built with: Lazarus 4.8, FPC 3.2.2
+  Platform: Windows (primary), Linux/macOS (capable)
+
+This package includes:
+  ✓ Source code (fully editable)
+  ✓ Binary executable (ready to run)
+  ✓ Comprehensive documentation
+  ✓ SQLiteGen v1.0 (persistent storage)
+  ✓ EE constants (425 spells, 1,500+ feats, 500+ appearances)
+  ✓ 30+ generators for common NWScript tasks
+
+===============================================================================
+
+SUPPORT & COMMUNITY
+===================
+
+Have questions?
+  1. Check README.md first (comprehensive user guide)
+  2. Review generator's built-in help text
+  3. See ROADMAP.txt for planned features
+  4. Visit Neverwinter Vault community forums
+
+Found a bug?
+  1. Reproduce the issue step-by-step
+  2. Note the exact error message or behavior
+  3. Report with: OS version, what generator, what input, what went wrong
+  4. Attach generated code if relevant
+
+Want to contribute?
+  1. Fork the repository (GPL v2 allows it)
+  2. Make improvements to source code
+  3. Submit pull request with clear description
+  4. Help maintain this tool for the community
+
+================================================================================
+
+LEGAL INFORMATION
+=================
+
+Arcana is released under GNU GPL v2.0 (see LICENSE.txt)
+
+You are free to:
+  ✓ Use, modify, redistribute
+  ✓ Create derivative works
+  ✓ Sell or give away (with source/license)
+
+You must:
+  ✓ Include license and attribution
+  ✓ Provide or link to source code
+  ✓ License derivatives under GPL v2 or later
+
+Original work by Lilac Soul (2004-2011)
+Maintained by The Krit (2011-2014)
+Revived by Carcerian (2024)
+
+================================================================================
+
+GETTING STARTED
+===============
+
+If this is your first time:
+  1. Read README.md (5-10 minutes)
+  2. Launch scriptgenerator.exe
+  3. Click "SQLite Persistent Value" (newest feature, good intro)
+  4. Fill in: Scope → Key → Value
+  5. Click "Set Value" to generate code
+  6. Review generated code in the preview
+  7. Click "Add to Script" to use it
+
+Then explore:
+  - Other generators in the menu
+  - Try "Apply Effect" (classic generator)
+  - Try "Spawn Creature" (versatile)
+  - Experiment and have fun
+
+Questions?
+  - Each generator has built-in help
+  - README.md has detailed walkthroughs
+  - ROADMAP.txt explains what's coming next
+
+================================================================================
+
+Thank you for using Arcana.
+
+"Free software is a matter of liberty, not price." — Richard Stallman
+
+Built with precision. Released with care.
+Long live Lilac Soul's legacy.

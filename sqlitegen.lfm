@@ -1,0 +1,204 @@
+object sqlitegenForm: TsqlitegenForm
+  Left = 376
+  Height = 500
+  Top = 154
+  Width = 650
+  ActiveControl = ComboScope
+  BorderStyle = bsDialog
+  Caption = 'SQLite Persistent Value (Module/Campaign)'
+  ClientHeight = 500
+  ClientWidth = 650
+  Color = 14652793
+  Font.Color = clBlack
+  Font.Height = -11
+  Font.Name = 'Arial'
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  
+  object LabelTitle: TLabel
+    Left = 15
+    Height = 20
+    Top = 8
+    Width = 400
+    Caption = 'SQLite Persistent Value Generator (Set/Get)'
+    Font.Color = clMaroon
+    Font.Height = -14
+    Font.Name = 'Arial'
+    Font.Bold = True
+    ParentColor = False
+    ParentFont = False
+  end
+
+  object PanelControls: TPanel
+    Left = 15
+    Height = 160
+    Top = 35
+    Width = 620
+    BevelOuter = bvNone
+    Color = 14652793
+    ParentColor = False
+    TabOrder = 0
+    
+    object LabelScope: TLabel
+      Left = 0
+      Height = 16
+      Top = 8
+      Width = 45
+      Caption = 'Scope:'
+      Font.Color = clMaroon
+      Font.Height = -13
+      Font.Name = 'Arial'
+      ParentColor = False
+      ParentFont = False
+    end
+
+    object ComboScope: TComboBox
+      Left = 0
+      Height = 31
+      Top = 28
+      Width = 600
+      Color = 16311256
+      ItemHeight = 0
+      Style = csDropDownList
+      TabOrder = 0
+    end
+
+    object LabelKey: TLabel
+      Left = 0
+      Height = 16
+      Top = 70
+      Width = 80
+      Caption = 'Variable Key:'
+      Font.Color = clMaroon
+      Font.Height = -13
+      Font.Name = 'Arial'
+      ParentColor = False
+      ParentFont = False
+    end
+
+    object EditKey: TEdit
+      Left = 0
+      Height = 28
+      Top = 90
+      Width = 600
+      Color = 16311256
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 1
+      Text = 'player_health'
+    end
+
+    object LabelValue: TLabel
+      Left = 0
+      Height = 16
+      Top = 125
+      Width = 80
+      Caption = 'Value (for Set):'
+      Font.Color = clMaroon
+      Font.Height = -13
+      Font.Name = 'Arial'
+      ParentColor = False
+      ParentFont = False
+    end
+
+    object EditValue: TEdit
+      Left = 0
+      Height = 28
+      Top = 145
+      Width = 600
+      Color = 16311256
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'Arial'
+      ParentFont = False
+      TabOrder = 2
+      Text = '100'
+    end
+  end
+
+  object PanelOutput: TPanel
+    Left = 15
+    Height = 230
+    Top = 210
+    Width = 620
+    BevelOuter = bvNone
+    Color = 14652793
+    ParentColor = False
+    TabOrder = 1
+    
+    object LabelOutput: TLabel
+      Left = 0
+      Height = 16
+      Top = 0
+      Width = 110
+      Caption = 'Generated NWScript:'
+      Font.Color = clMaroon
+      Font.Height = -13
+      Font.Name = 'Arial'
+      ParentColor = False
+      ParentFont = False
+    end
+
+    object MemoOutput: TMemo
+      Left = 0
+      Height = 200
+      Top = 20
+      Width = 620
+      Color = 16311256
+      Font.Color = clNavy
+      Font.Height = -10
+      Font.Name = 'Courier New'
+      Lines.Strings = (
+        '// Click "Set Value" or "Get Value" to generate code'
+      )
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 0
+      WordWrap = False
+    end
+  end
+
+  object ButtonSetValue: TButton
+    Left = 15
+    Height = 35
+    Top = 450
+    Width = 140
+    Caption = 'Set Value'
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Arial'
+    ParentFont = False
+    TabOrder = 2
+    OnClick = ButtonSetValueClick
+  end
+
+  object ButtonGetValue: TButton
+    Left = 165
+    Height = 35
+    Top = 450
+    Width = 140
+    Caption = 'Get Value'
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Arial'
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonGetValueClick
+  end
+
+  object ButtonClose: TButton
+    Left = 495
+    Height = 35
+    Top = 450
+    Width = 140
+    Caption = 'Add to Script'
+    Font.Color = clGreen
+    Font.Height = -12
+    Font.Name = 'Arial'
+    ParentFont = False
+    TabOrder = 4
+    OnClick = ButtonCloseClick
+  end
+end

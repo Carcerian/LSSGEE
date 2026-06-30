@@ -1,0 +1,119 @@
+ARCANA: Lilac Soul's Script Generator EE — License
+
+================================================================================
+GNU GENERAL PUBLIC LICENSE, Version 2, June 1991
+================================================================================
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+For the complete license text, see: https://www.gnu.org/licenses/gpl-2.0.html
+
+================================================================================
+ATTRIBUTION & CREDITS
+================================================================================
+
+ORIGINAL WORK
+  Lilac Soul's NWScript Generator (2004-2011)
+  - Original design and implementation
+  - GPL v2 license applied to full codebase
+  - Available for download: Neverwinter Vault archives
+
+MAINTAINED BY
+  The Krit (2011-2014)
+  - Version 1.69 update and maintenance
+  - GPL v2 compliance maintained
+  - Last release: July 24, 2014
+
+REVIVED & MODERNIZED BY
+  Carcerian (2024)
+  - Port to Lazarus 4.8 / FPC 3.2.2
+  - Neverwinter Nights: Enhanced Edition compatibility
+  - SQLiteGen v1.0 (persistent storage generator)
+  - Documentation and roadmap
+  - GPL v2 license preserved and honored
+
+EXTERNAL LIBRARIES & DEPENDENCIES
+  Lazarus Component Library (LCL)
+    - Maintainer: Lazarus community
+    - License: Modified LGPL (compatible with GPL v2)
+    - Used for: Cross-platform GUI framework
+
+  Free Pascal Compiler (FPC)
+    - Maintainer: Free Pascal community
+    - License: GPL v2 and LGPL (dual licensing)
+    - Used for: Compilation target
+
+================================================================================
+COMPLIANCE STATEMENT
+================================================================================
+
+This program is released under GNU GPL v2.0 or later.
+
+You are free to:
+  ✓ Use this program for any purpose (commercial or non-commercial)
+  ✓ Modify the source code
+  ✓ Redistribute the program in source or binary form
+  ✓ Incorporate this program into other projects
+
+You must:
+  ✓ Include a copy of this license with any distribution
+  ✓ Provide attribution to Lilac Soul, The Krit, and Carcerian
+  ✓ Include source code or a link to obtain it
+  ✓ Notify users of any modifications you make
+
+Any derivative works must also be licensed under GPL v2 or later.
+
+================================================================================
+HERITAGE & PRESERVATION
+================================================================================
+
+Arcana exists because Lilac Soul created something that mattered to thousands
+of builders. The Krit kept it alive. This revival honors both by:
+
+  1. Preserving the original design philosophy and user experience
+  2. Maintaining GPL v2 licensing (open source, forever)
+  3. Providing full source code for future maintainers
+  4. Documenting the history and giving proper credit
+  5. Building on the foundation rather than replacing it
+
+The code is yours to use, modify, and share — on the same terms Lilac Soul
+gave to the community 20 years ago.
+
+================================================================================
+VERSION INFORMATION
+================================================================================
+
+Arcana v1.0 "The Revival"
+  Release Date: June 30, 2024
+  License: GNU GPL v2.0 or later
+  Compiler: Lazarus 4.8 / FPC 3.2.2
+  Platform: Windows (primary), Linux/macOS (capable)
+
+This license applies to:
+  - All source code in this distribution
+  - Binary executable (scriptgenerator.exe)
+  - Documentation (README, CHANGELOG, ROADMAP)
+  - Generated constants and data files
+  - All derivative works created from this codebase
+
+================================================================================
+
+Questions about this license?
+  Visit: https://www.gnu.org/licenses/gpl-2.0.html
+  Or contact the maintainer through the project repository.
+
+"Free software is a matter of liberty, not price." — Richard Stallman
+
+Arcana v1.0 — Built with precision, released with care.
+Long live Lilac Soul's legacy.

@@ -1,0 +1,38 @@
+ARCANA v1.0 COMPLETE PACKAGE
+=============================
+
+Contents:
+  README.md               — User guide and feature overview (START HERE)
+  INSTALL.txt            — Installation and setup instructions
+  LICENSE.txt            — GNU GPL v2.0 license with attribution
+  CHANGELOG.txt          — Complete version history and credits
+  ROADMAP.txt            — Future features and development timeline
+  PHASE3_POLISH.txt      — UI polish checklist for v1.0 release
+  
+  lstk_scriptgen169_source/  — Complete source code
+    Scriptgen.lpi        — Lazarus project file (open to build)
+    scriptgenerator.exe  — Compiled Windows binary
+    [all source units and forms]
+
+Quick Start:
+  1. Read README.md
+  2. Run scriptgenerator.exe or build from source
+  3. Point to your NWN:EE installation
+  4. Choose a generator and generate NWScript
+
+What's New in v1.0:
+  ✓ Full EE compatibility (425+ spells, 1,500+ feats, 500+ appearances)
+  ✓ SQLiteGen: Persistent key/value storage (new)
+  ✓ Fixed 4 bit-rot issues for Lazarus 4.8 / FPC 3.2.2
+  ✓ Complete documentation and roadmap
+
+Status: Stable, production-ready
+
+Ready for Vault submission. Phase 3 (UI polish) optional but recommended
+for maximum visual polish before public release.
+
+See PHASE3_POLISH.txt for checklist and estimated effort.
+
+---
+Arcana v1.0 — Built with precision, released with care.
+Long live Lilac Soul's legacy.
