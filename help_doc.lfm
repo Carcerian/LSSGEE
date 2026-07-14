@@ -1552,7 +1552,7 @@ object helpdoc: Thelpdoc
       Height = 14
       Top = 8
       Width = 94
-      Caption = 'Version TK.0 of the'
+      Caption = 'Version TK.1 of the'
       ParentColor = False
     end
     object Label6: TLabel
@@ -1609,7 +1609,7 @@ object helpdoc: Thelpdoc
       Height = 14
       Top = 40
       Width = 118
-      Caption = 'Released: July 1st, 2011'
+      Caption = 'Released: July 14th, 2026'
       Font.Color = clMaroon
       Font.Height = -11
       Font.Name = 'Arial'

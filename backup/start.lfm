@@ -5,12 +5,10 @@ object main: Tmain
   Width = 737
   ActiveControl = scripttype
   BorderIcons = [biSystemMenu, biMinimize]
-  BorderStyle = bsSingle
-  Caption = 'Arcana: Lilac Soul''s Script Generator (EE v1.0)'
+  Caption = 'Arcana: Lilac Soul''s Script Generator (EE v1.1)'
   ClientHeight = 495
   ClientWidth = 737
   Color = clBlack
-  Enabled = False
   Font.Height = -11
   Font.Name = 'Arial'
   Icon.Data = {
@@ -42,14 +40,17 @@ object main: Tmain
   }
   Menu = MainMenu1
   Position = poDesktopCenter
+  SnapOptions.SnapToMonitor = True
   LCLVersion = '4.8.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
   object Image2: TImage
     Left = 0
-    Height = 537
+    Height = 526
     Top = -50
     Width = 737
+    AutoSize = True
+    Enabled = False
     Picture.Data = {
       0A544A706567496D61676537780300FFD8FFE000104A46494600010201004800
       480000FFED0EC850686F746F73686F7020332E30003842494D03ED0A5265736F
@@ -7160,6 +7161,7 @@ object main: Tmain
       DB7FCEBFFFD9
     }
     Transparent = True
+    OnClick = Image2Click
   end
   object Label1: TLabel
     Left = 16

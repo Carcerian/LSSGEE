@@ -119,6 +119,7 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
     // (file menu)
     procedure Savescript1Click(Sender: TObject);
     procedure saveandcompileClick(Sender: TObject);
@@ -551,6 +552,11 @@ begin
   Tlilac.ClearScript();
   Teventchooser.ResetEvents();
   Tblacksmith.ResetSmith();
+end;
+
+procedure Tmain.Image2Click(Sender: TObject);
+begin
+
 end;
 
 
