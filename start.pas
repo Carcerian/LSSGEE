@@ -118,6 +118,7 @@ type
     // Event handlers
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     // (file menu)
     procedure Savescript1Click(Sender: TObject);
     procedure saveandcompileClick(Sender: TObject);
@@ -359,16 +360,16 @@ begin
   if Component is TControl then
   begin
     Control := TControl(Component);
-    
+
     // Swap lilac (13369548) → brown (14652793)
     if Control.Color = 13369548 then
       Control.Color := 14652793;
-    
+
     // Swap light lilac (16448741) → cream (16311256)
     if Control.Color = 16448741 then
       Control.Color := 16311256;
   end;
-  
+
   // Recursively process all child components
   if Component.ComponentCount > 0 then
     for i := 0 to Component.ComponentCount - 1 do
@@ -518,14 +519,38 @@ begin
     // Finally, release memory.
     Registry.Free();
 
-    // Some configurations of the main window.
-    CheckForCompiler();
+    // Wire up the FormShow event to defer non-critical initialization.
+    OnShow := FormShow;
 
+    // Defer non-critical initialization to FormShow to avoid black loader box.
+    // Some configurations of the main window.
+    // CheckForCompiler();
+    //
     // Now that the global stuff is taken care of, initialize the major parts
     // of the Script Generator.
-    Tlilac.ClearScript();
-    Teventchooser.ResetEvents();
-    Tblacksmith.ResetSmith();
+    // Tlilac.ClearScript();
+    // Teventchooser.ResetEvents();
+    // Tblacksmith.ResetSmith();
+end;
+
+
+// Called after the form becomes visible.
+// Initializes heavy components that don't need to block window rendering.
+procedure Tmain.FormShow(Sender: TObject);
+begin
+  // Disable this event handler to prevent repeated execution.
+  OnShow := nil;
+
+  // Allow the window to paint itself before starting heavy initialization.
+  // This ensures the user sees the window instead of a black box.
+  Application.ProcessMessages();
+  Update;  // Force immediate repaint of the window
+
+  // Now perform the deferred initialization.
+  CheckForCompiler();
+  Tlilac.ClearScript();
+  Teventchooser.ResetEvents();
+  Tblacksmith.ResetSmith();
 end;
 
 

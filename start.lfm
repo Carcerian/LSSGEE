@@ -7,7 +7,7 @@ object main: Tmain
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Arcana: Lilac Soul''s Script Generator (EE v1.0)'
-  ClientHeight = 470
+  ClientHeight = 495
   ClientWidth = 737
   Color = clBlack
   Font.Height = -11
@@ -40,11 +40,10 @@ object main: Tmain
     FFFF
   }
   Menu = MainMenu1
+  Position = poDesktopCenter
+  LCLVersion = '4.8.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
-  Position = poDesktopCenter
-  LCLVersion = '0.9.30'
-  Visible = True
   object Image2: TImage
     Left = 0
     Height = 537
@@ -7165,7 +7164,7 @@ object main: Tmain
     Left = 16
     Height = 16
     Top = 4
-    Width = 77
+    Width = 112
     Caption = 'Version Arcana 1.0'
     Font.Color = clAqua
     Font.Height = -13
@@ -7176,14 +7175,14 @@ object main: Tmain
   end
   object scripttype: TComboBox
     Left = 32
-    Height = 27
+    Height = 22
     Top = 32
     Width = 265
     Color = 16311256
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Arial'
-    ItemHeight = 0
+    ItemHeight = 14
     Items.Strings = (
       'Text appears when (starting conditional)'
       'Normal script'
@@ -7192,10 +7191,10 @@ object main: Tmain
       'Other item events (acquire/unacquire/equip/unequip)'
       'Tag-based template'
     )
-    OnChange = scripttypeChange
     ParentFont = False
     TabOrder = 0
     Text = 'Choose script type'
+    OnChange = scripttypeChange
   end
   object scriptwindow: TMemo
     Left = 352
@@ -7206,23 +7205,23 @@ object main: Tmain
     Font.CharSet = ANSI_CHARSET
     Font.Height = -11
     Font.Name = 'courier new'
-    OnKeyDown = scriptwindowKeyDown
     ParentFont = False
     ReadOnly = True
     ScrollBars = ssBoth
     TabOrder = 1
     WordWrap = False
+    OnKeyDown = scriptwindowKeyDown
   end
   object conditional: TComboBox
     Left = 32
-    Height = 27
+    Height = 22
     Top = 64
     Width = 265
     Color = 16311256
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Arial'
-    ItemHeight = 0
+    ItemHeight = 14
     Items.Strings = (
       '*** (you may repeat this step indefinitely...) ***'
       'Randomness'
@@ -7236,11 +7235,11 @@ object main: Tmain
       '----------------'
       'That this has not happened before (tutorial)'
     )
-    OnChange = conditionalChange
     ParentFont = False
     TabOrder = 2
     Text = 'What do you want to check for?'
     Visible = False
+    OnChange = conditionalChange
   end
   object normalpanel: TPanel
     Left = 24
@@ -7250,19 +7249,20 @@ object main: Tmain
     ClientHeight = 81
     ClientWidth = 281
     Color = 6582129
+    ParentBackground = False
     ParentColor = False
     TabOrder = 3
     Visible = False
     object calledfrom: TComboBox
       Left = 8
-      Height = 27
+      Height = 22
       Top = 8
       Width = 265
       Color = 16311256
       Font.Color = clMaroon
       Font.Height = -11
       Font.Name = 'Arial'
-      ItemHeight = 0
+      ItemHeight = 14
       Items.Strings = (
         'From a conversation'
         'When a PC enters something (area, trigger...)'
@@ -7280,10 +7280,10 @@ object main: Tmain
         'When a PC dies (OnPlayerDeath script)'
         'When a PC respawns (OnPlayerRespawn script)'
       )
-      OnChange = calledfromChange
       ParentFont = False
       TabOrder = 0
       Text = 'Where is this script called from?'
+      OnChange = calledfromChange
     end
     object BitBtn1: TBitBtn
       Left = 72
@@ -7349,8 +7349,8 @@ object main: Tmain
         0707
       }
       NumGlyphs = 2
-      OnClick = testClick
       TabOrder = 1
+      OnClick = testClick
     end
   end
   object BitBtn2: TBitBtn
@@ -7402,8 +7402,8 @@ object main: Tmain
       F0F0888800008888888800000008888800008888888888888888888800008888
       88888888888888880000
     }
-    OnClick = BitBtn3Click
     TabOrder = 5
+    OnClick = BitBtn3Click
   end
   object BitBtn4: TBitBtn
     Left = 24
@@ -7439,9 +7439,9 @@ object main: Tmain
       8F000020FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0F0F3F3030E05050CF5050CF50
       50CF5050BF5050A05050902F2F8F000020FFFFFFFFFFFFFFFFFF
     }
-    OnClick = Exit2Click
     Spacing = 15
     TabOrder = 6
+    OnClick = Exit2Click
   end
   object BitBtn5: TBitBtn
     Left = 160
@@ -7477,19 +7477,19 @@ object main: Tmain
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
     }
-    OnClick = Button5Click
     TabOrder = 7
     Visible = False
+    OnClick = Button5Click
   end
   object savescript: TSaveDialog
     DefaultExt = '.nss'
     Filter = 'NWN script files (.nss)|*.nss'
-    left = 29
-    top = 287
+    Left = 29
+    Top = 287
   end
   object MainMenu1: TMainMenu
-    left = 28
-    top = 155
+    Left = 28
+    Top = 155
     object Scriptactions1: TMenuItem
       Caption = '&File'
       object Savescript1: TMenuItem
@@ -7596,8 +7596,8 @@ object main: Tmain
     end
   end
   object PopupMenu1: TPopupMenu
-    left = 113
-    top = 156
+    Left = 113
+    Top = 156
     object Copyscripttoclipboard1: TMenuItem
       Caption = '&Copy script (to clipboard)'
       OnClick = Copyscripttoclipboard1Click
@@ -7628,19 +7628,19 @@ object main: Tmain
   object erfsave: TSaveDialog
     DefaultExt = '.erf'
     Filter = 'Toolset import/export files (*.erf)|*.erf'
-    left = 111
-    top = 287
+    Left = 111
+    Top = 287
   end
   object ErfMod: TOpenDialog
     DefaultExt = '.mod'
     Filter = 'NWN modules (*.mod)|*.mod'
     Options = [ofFileMustExist, ofEnableSizing, ofViewDetail]
-    left = 219
-    top = 286
+    Left = 219
+    Top = 286
   end
   object ActionListScript: TActionList
-    left = 222
-    top = 156
+    Left = 222
+    Top = 156
     object ActionSave: TAction
       Caption = '&Save script'
       Enabled = False

@@ -146,7 +146,7 @@
         <EditorIndex Value="4"/>
         <TopLine Value="94"/>
         <CursorPos Y="128"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -157,10 +157,11 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="1401"/>
-        <CursorPos X="19" Y="1418"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="410"/>
+        <CursorPos X="5" Y="416"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="random_int.pas"/>
@@ -168,7 +169,7 @@
         <ComponentName Value="Randomint"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit2>
       <Unit3>
         <Filename Value="confirm_clear.pas"/>
@@ -176,7 +177,7 @@
         <ComponentName Value="confirmclear"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit3>
       <Unit4>
         <Filename Value="confirm_exit.pas"/>
@@ -184,7 +185,7 @@
         <ComponentName Value="confirmexit"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit4>
       <Unit5>
         <Filename Value="item_int.pas"/>
@@ -192,7 +193,7 @@
         <ComponentName Value="itemint"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit5>
       <Unit6>
         <Filename Value="howto_use.pas"/>
@@ -200,7 +201,7 @@
         <ComponentName Value="usehow"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit6>
       <Unit7>
         <Filename Value="numitems_int.pas"/>
@@ -208,7 +209,7 @@
         <ComponentName Value="numitems"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit7>
       <Unit8>
         <Filename Value="pcgold_int.pas"/>
@@ -216,7 +217,7 @@
         <ComponentName Value="goldint"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit8>
       <Unit9>
         <Filename Value="pcstats_int.pas"/>
@@ -224,7 +225,7 @@
         <ComponentName Value="pcstats"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit9>
       <Unit10>
         <Filename Value="statchoose_box.pas"/>
@@ -232,7 +233,7 @@
         <ComponentName Value="statchoose"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit10>
       <Unit11>
         <Filename Value="statwarning_box.pas"/>
@@ -240,7 +241,7 @@
         <ComponentName Value="statwarning"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit11>
       <Unit12>
         <Filename Value="oncetut.pas"/>
@@ -248,7 +249,7 @@
         <ComponentName Value="once_tut"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit12>
       <Unit13>
         <Filename Value="local_int.pas"/>
@@ -256,7 +257,7 @@
         <ComponentName Value="local"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit13>
       <Unit14>
         <Filename Value="party_doc.pas"/>
@@ -264,7 +265,7 @@
         <ComponentName Value="partydoc"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit14>
       <Unit15>
         <Filename Value="help_doc.pas"/>
@@ -272,12 +273,12 @@
         <ComponentName Value="helpdoc"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit15>
       <Unit16>
         <Filename Value="nwn.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit16>
       <Unit17>
         <Filename Value="normscript_help.pas"/>
@@ -285,7 +286,7 @@
         <ComponentName Value="normscripthelp"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit17>
       <Unit18>
         <Filename Value="event.pas"/>
@@ -293,7 +294,7 @@
         <ComponentName Value="eventchooser"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit18>
       <Unit19>
         <Filename Value="restraint_norm.pas"/>
@@ -301,7 +302,7 @@
         <ComponentName Value="restraint"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit19>
       <Unit20>
         <Filename Value="other_restrict.pas"/>
@@ -309,7 +310,7 @@
         <ComponentName Value="otherrestrictions"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit20>
       <Unit21>
         <Filename Value="itemxp_give.pas"/>
@@ -317,7 +318,7 @@
         <ComponentName Value="giveitem"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit21>
       <Unit22>
         <Filename Value="itemxp_take.pas"/>
@@ -325,7 +326,7 @@
         <ComponentName Value="takestuff"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit22>
       <Unit23>
         <Filename Value="adjustreputation.pas"/>
@@ -333,7 +334,7 @@
         <ComponentName Value="repadjust"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit23>
       <Unit24>
         <Filename Value="alignmentreputation.pas"/>
@@ -341,7 +342,7 @@
         <ComponentName Value="adjalignment"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit24>
       <Unit25>
         <Filename Value="localvar.pas"/>
@@ -349,7 +350,7 @@
         <ComponentName Value="locvar"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit25>
       <Unit26>
         <Filename Value="startmerchant.pas"/>
@@ -357,7 +358,7 @@
         <ComponentName Value="merchant"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit26>
       <Unit27>
         <Filename Value="attackpc.pas"/>
@@ -365,7 +366,7 @@
         <ComponentName Value="attack"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit27>
       <Unit28>
         <Filename Value="spawn_creature.pas"/>
@@ -373,7 +374,7 @@
         <ComponentName Value="crspawn"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit28>
       <Unit29>
         <Filename Value="spawn_placeable.pas"/>
@@ -381,7 +382,7 @@
         <ComponentName Value="plspawn"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit29>
       <Unit30>
         <Filename Value="help_concept.pas"/>
@@ -389,7 +390,7 @@
         <ComponentName Value="concept_help"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit30>
       <Unit31>
         <Filename Value="codegen_doc.pas"/>
@@ -397,7 +398,7 @@
         <ComponentName Value="codegen"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit31>
       <Unit32>
         <Filename Value="startconv.pas"/>
@@ -405,7 +406,7 @@
         <ComponentName Value="conversation"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit32>
       <Unit33>
         <Filename Value="teleport_pc.pas"/>
@@ -413,7 +414,7 @@
         <ComponentName Value="teleport"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit33>
       <Unit34>
         <Filename Value="applyvisual.pas"/>
@@ -421,7 +422,7 @@
         <ComponentName Value="vfx"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit34>
       <Unit35>
         <Filename Value="destroyobject.pas"/>
@@ -429,7 +430,7 @@
         <ComponentName Value="destroyobj"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit35>
       <Unit36>
         <Filename Value="popup.pas"/>
@@ -437,7 +438,7 @@
         <ComponentName Value="popup_ev"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit36>
       <Unit37>
         <Filename Value="ifinspector.pas"/>
@@ -445,7 +446,7 @@
         <ComponentName Value="inspect"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit37>
       <Unit38>
         <Filename Value="chooseif.pas"/>
@@ -456,7 +457,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="315"/>
         <CursorPos X="43" Y="332"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit38>
       <Unit39>
@@ -465,7 +466,7 @@
         <ComponentName Value="makeelse"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit39>
       <Unit40>
         <Filename Value="journaladd.pas"/>
@@ -473,7 +474,7 @@
         <ComponentName Value="entryupdate"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit40>
       <Unit41>
         <Filename Value="journal_int.pas"/>
@@ -481,7 +482,7 @@
         <ComponentName Value="journalsint"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit41>
       <Unit42>
         <Filename Value="damage_pc.pas"/>
@@ -489,7 +490,7 @@
         <ComponentName Value="damagepc"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit42>
       <Unit43>
         <Filename Value="spellcast.pas"/>
@@ -497,7 +498,7 @@
         <ComponentName Value="castspell"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit43>
       <Unit44>
         <Filename Value="openlock.pas"/>
@@ -505,7 +506,7 @@
         <ComponentName Value="lockopen"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit44>
       <Unit45>
         <Filename Value="effect.pas"/>
@@ -513,7 +514,7 @@
         <ComponentName Value="applyeffect"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit45>
       <Unit46>
         <Filename Value="actionqueue.pas"/>
@@ -521,7 +522,7 @@
         <ComponentName Value="queue"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit46>
       <Unit47>
         <Filename Value="if_warning.pas"/>
@@ -529,7 +530,7 @@
         <ComponentName Value="ifwarning"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit47>
       <Unit48>
         <Filename Value="heartbeat_notice.pas"/>
@@ -537,7 +538,7 @@
         <ComponentName Value="heartbeatnotice"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit48>
       <Unit49>
         <Filename Value="storepcparty.pas"/>
@@ -545,7 +546,7 @@
         <ComponentName Value="storeinfo"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit49>
       <Unit50>
         <Filename Value="lights_onoff.pas"/>
@@ -553,7 +554,7 @@
         <ComponentName Value="lights"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit50>
       <Unit51>
         <Filename Value="fakespell.pas"/>
@@ -561,7 +562,7 @@
         <ComponentName Value="fakespelldoc"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit51>
       <Unit52>
         <Filename Value="black_smith.pas"/>
@@ -569,7 +570,7 @@
         <ComponentName Value="blacksmith"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit52>
       <Unit53>
         <Filename Value="choose_smith.pas"/>
@@ -577,7 +578,7 @@
         <ComponentName Value="choose_blacksmith"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit53>
       <Unit54>
         <Filename Value="smith_when.pas"/>
@@ -585,7 +586,7 @@
         <ComponentName Value="whentofire"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit54>
       <Unit55>
         <Filename Value="unique_power.pas"/>
@@ -593,7 +594,7 @@
         <ComponentName Value="uniquepower"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit55>
       <Unit56>
         <Filename Value="commform.pas"/>
@@ -601,7 +602,7 @@
         <ComponentName Value="communicationform"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit56>
       <Unit57>
         <Filename Value="sound_object.pas"/>
@@ -609,7 +610,7 @@
         <ComponentName Value="soundobject"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit57>
       <Unit58>
         <Filename Value="subracedeity.pas"/>
@@ -617,7 +618,7 @@
         <ComponentName Value="subrace_deity"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit58>
       <Unit59>
         <Filename Value="iffollower.pas"/>
@@ -625,7 +626,7 @@
         <ComponentName Value="followers"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit59>
       <Unit60>
         <Filename Value="companions.pas"/>
@@ -633,7 +634,7 @@
         <ComponentName Value="companion"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit60>
       <Unit61>
         <Filename Value="delay.pas"/>
@@ -641,7 +642,7 @@
         <ComponentName Value="delaycommand"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit61>
       <Unit62>
         <Filename Value="miscfunc.pas"/>
@@ -649,7 +650,7 @@
         <ComponentName Value="misc"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit62>
       <Unit63>
         <Filename Value="acquire_item.pas"/>
@@ -657,7 +658,7 @@
         <ComponentName Value="acquire"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit63>
       <Unit64>
         <Filename Value="cut_scene.pas"/>
@@ -665,7 +666,7 @@
         <ComponentName Value="cutscene"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit64>
       <Unit65>
         <Filename Value="itemscript.pas"/>
@@ -673,7 +674,7 @@
         <ComponentName Value="itemscripting"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit65>
       <Unit66>
         <Filename Value="ipSpell.pas"/>
@@ -681,7 +682,7 @@
         <ComponentName Value="ipCastSpell"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit66>
       <Unit67>
         <Filename Value="palettetool.pas"/>
@@ -689,7 +690,7 @@
         <ComponentName Value="PaletteWindow"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit67>
       <Unit68>
         <Filename Value="erfname.pas"/>
@@ -697,7 +698,7 @@
         <ComponentName Value="ErfNameForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit68>
       <Unit69>
         <Filename Value="removeeffect.pas"/>
@@ -705,7 +706,7 @@
         <ComponentName Value="RemEffect"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit69>
       <Unit70>
         <Filename Value="EventHelper.pas"/>
@@ -713,7 +714,7 @@
         <ComponentName Value="EventHelp"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit70>
       <Unit71>
         <Filename Value="appear.pas"/>
@@ -724,7 +725,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="337"/>
         <CursorPos X="18" Y="354"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit71>
       <Unit72>
@@ -733,14 +734,14 @@
         <ComponentName Value="trapform"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit72>
       <Unit73>
         <Filename Value="constants.pas"/>
         <IsPartOfProject Value="True"/>
         <TopLine Value="171"/>
         <CursorPos X="29" Y="183"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit73>
       <Unit74>
@@ -750,7 +751,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ExtForm"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit74>
       <Unit75>
         <Filename Value="colorc.pas"/>
@@ -758,7 +759,7 @@
         <ComponentName Value="ColorCreature"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ColorC"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit75>
       <Unit76>
         <Filename Value="queueform.pas"/>
@@ -767,7 +768,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="QueueForm"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit76>
       <Unit77>
         <Filename Value="horsemount.pas"/>
@@ -775,7 +776,7 @@
         <ComponentName Value="HorseForm"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="HorseMount"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit77>
       <Unit78>
         <Filename Value="timeconditional.pas"/>
@@ -783,7 +784,7 @@
         <ComponentName Value="CondTime"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TimeConditional"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit78>
       <Unit79>
         <Filename Value="typechoose.pas"/>
@@ -791,7 +792,7 @@
         <ComponentName Value="TypeChooser"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="TypeChoose"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit79>
       <Unit80>
         <Filename Value="biofiles.pas"/>
@@ -800,7 +801,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="491"/>
         <CursorPos X="15" Y="507"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit80>
       <Unit81>
@@ -811,7 +812,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit81>
     </Units>
   </ProjectOptions>
