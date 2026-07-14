@@ -62,29 +62,28 @@ LazarusResources.Add('Tconcept_help','FORMDATA',[
   +'e, only "Edit Copy" (which is no good for finding the ResRef). Why is "Edit'
   +' Copy" bad? Because that means you are creating a new palette entry, which '
   +'must have its own unique ResRef. The Toolset knows this and automatically g'
-  +'enerates a new ResRef before giving you a chance to edit it.'#6#0#6'AFor fu'
-  ,'rther information, check the Lexicon or the BioWare forums.'#6#13'Lexicon 1'
-  +'.69:'#6'2* http://palmergames.com/Lexicon/Lexicon_1_69.html'#6#13'Lexicon 1'
-  +'.68:'#6#28'* http://www.nwnlexicon.com/'#6#28'New BioWare scripting forum:'
-  +#6'6* http://social.bioware.com/forum/1/category/192/index'#6#28'Old BioWare'
-  +' scripting forum:'#6'7* http://nwn.bioware.com/forums/viewforum.html?forum='
-  +'47'#0#10'ParentFont'#8#8'ReadOnly'#9#10'ScrollBars'#7#10'ssVertical'#8'TabO'
-  +'rder'#2#0#0#0#7'TBitBtn'#7'BitBtn1'#4'Left'#3'c'#1#6'Height'#2'('#3'Top'#3
-  +','#1#5'Width'#2'x'#6'Cancel'#9#7'Caption'#6#5'Close'#7'Default'#9#10'Glyph.'
-  +'Data'#10#178#1#0#0#174#1#0#0'BM'#174#1#0#0#0#0#0#0'v'#0#0#0'('#0#0#0#23#0#0
-  +#0#26#0#0#0#1#0#4#0#0#0#0#0'8'#1#0#0#0#0#0#0#0#0#0#0#16#0#0#0#0#0#0#0#0#0#0#0
-  +#0#0#191#0#0#191#0#0#0#191#191#0#191#0#0#0#191#0#191#0#191#191#0#0#192#192
-  +#192#0#128#128#128#0#0#0#255#0#0#255#0#0#0#255#255#0#255#0#0#0#255#0#255#0
-  +#255#255#0#0#255#255#255#0'wwwwwwwwwwwwwwwwwwwwwww{w'#0#0#0#0#0#0#0#0#0#0#11
-  +'wx'#240#145#17#17#17#17#17#15#7'pwx'#240#145#17#17#17#17#17#15#7'xwx'#240
-  +#145#17#17#17#17#17#0#7'wwx'#240#145#17#17#17#17#17'p'#7'{wx'#240#145#17#17
-  +#17#17#17'p'#7'pwx'#240#145#17#17#17#17#17'p'#7'pwx'#240#145#17#17#17#17#17
-  +#15#7'{wx'#240#145#17#17#17#17#17#15#7'{wx'#240#145#1#17#17#17#17#15#7'pwx'
-  +#240#144#176#17#17#17#17#15#7'{wx'#240#145#1#17#17#17#17#15#7'{wx'#240#145#17
-  +#17#17#17#17#15#7'{wx'#240#145#17#17#17#17#17#0#7'pwx'#240#145#17#17#17#17#17
-  +'p'#7'{wx'#240#145#17#17#17#17#17'p'#7'{wx'#240#145#17#17#17#17#17'p'#7'{wx'
-  +#240#145#17#17#17#17#17#15#7'pwx'#240#145#17#17#17#17#17#15#7'pwx'#240#153
-  +#153#153#153#153#153#15#7'pwx'#240#0#0#0#0#0#0#15#7'pwx'#255#255#255#255#255
-  +#255#255#255#7'pwx'#136#136#136#136#136#136#136#136#7'pwwwwwwwwwwwp'#11'Moda'
-  +'lResult'#2#1#7'Spacing'#2#15#8'TabOrder'#2#1#0#0#0
+  +'enerates a new ResRef before giving you a chance to edit it.'#6#0#6'FFor fu'
+  ,'rther information, check the Lexicon or NWN community resources.'#6#12'NWN '
+  +'Lexicon:'#6#29'* https://www.nwnlexicon.com/'#6'"NWN Vault (Downloads & Com'
+  +'munity):'#6#30'* https://neverwintervault.org'#6#18'NWN Community Hub:'#6'$'
+  +'* https://neverwintervault.org/forum'#0#10'ParentFont'#8#8'ReadOnly'#9#10'S'
+  +'crollBars'#7#10'ssVertical'#8'TabOrder'#2#0#0#0#7'TBitBtn'#7'BitBtn1'#4'Lef'
+  +'t'#3'c'#1#6'Height'#2'('#3'Top'#3','#1#5'Width'#2'x'#6'Cancel'#9#7'Caption'
+  +#6#5'Close'#7'Default'#9#10'Glyph.Data'#10#178#1#0#0#174#1#0#0'BM'#174#1#0#0
+  +#0#0#0#0'v'#0#0#0'('#0#0#0#23#0#0#0#26#0#0#0#1#0#4#0#0#0#0#0'8'#1#0#0#0#0#0#0
+  +#0#0#0#0#16#0#0#0#0#0#0#0#0#0#0#0#0#0#191#0#0#191#0#0#0#191#191#0#191#0#0#0
+  +#191#0#191#0#191#191#0#0#192#192#192#0#128#128#128#0#0#0#255#0#0#255#0#0#0
+  +#255#255#0#255#0#0#0#255#0#255#0#255#255#0#0#255#255#255#0'wwwwwwwwwwwwwwwww'
+  +'wwwwww{w'#0#0#0#0#0#0#0#0#0#0#11'wx'#240#145#17#17#17#17#17#15#7'pwx'#240
+  +#145#17#17#17#17#17#15#7'xwx'#240#145#17#17#17#17#17#0#7'wwx'#240#145#17#17
+  +#17#17#17'p'#7'{wx'#240#145#17#17#17#17#17'p'#7'pwx'#240#145#17#17#17#17#17
+  +'p'#7'pwx'#240#145#17#17#17#17#17#15#7'{wx'#240#145#17#17#17#17#17#15#7'{wx'
+  +#240#145#1#17#17#17#17#15#7'pwx'#240#144#176#17#17#17#17#15#7'{wx'#240#145#1
+  +#17#17#17#17#15#7'{wx'#240#145#17#17#17#17#17#15#7'{wx'#240#145#17#17#17#17
+  +#17#0#7'pwx'#240#145#17#17#17#17#17'p'#7'{wx'#240#145#17#17#17#17#17'p'#7'{w'
+  +'x'#240#145#17#17#17#17#17'p'#7'{wx'#240#145#17#17#17#17#17#15#7'pwx'#240#145
+  +#17#17#17#17#17#15#7'pwx'#240#153#153#153#153#153#153#15#7'pwx'#240#0#0#0#0#0
+  +#0#15#7'pwx'#255#255#255#255#255#255#255#255#7'pwx'#136#136#136#136#136#136
+  +#136#136#7'pwwwwwwwwwwwp'#11'ModalResult'#2#1#7'Spacing'#2#15#8'TabOrder'#2#1
+  +#0#0#0
 ]);

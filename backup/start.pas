@@ -119,7 +119,6 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure Image2Click(Sender: TObject);
     // (file menu)
     procedure Savescript1Click(Sender: TObject);
     procedure saveandcompileClick(Sender: TObject);
@@ -209,7 +208,7 @@ var
 
 const
     // Various string constants.
-    ThisVersion   = 'Arcana 1.0';
+    ThisVersion   = 'Arcana 1.1';
     VaultID       = '1502';
 
     // Registry strings.
@@ -361,16 +360,16 @@ begin
   if Component is TControl then
   begin
     Control := TControl(Component);
-
+    
     // Swap lilac (13369548) → brown (14652793)
     if Control.Color = 13369548 then
       Control.Color := 14652793;
-
+    
     // Swap light lilac (16448741) → cream (16311256)
     if Control.Color = 16448741 then
       Control.Color := 16311256;
   end;
-
+  
   // Recursively process all child components
   if Component.ComponentCount > 0 then
     for i := 0 to Component.ComponentCount - 1 do
@@ -552,11 +551,6 @@ begin
   Tlilac.ClearScript();
   Teventchooser.ResetEvents();
   Tblacksmith.ResetSmith();
-end;
-
-procedure Tmain.Image2Click(Sender: TObject);
-begin
-
 end;
 
 

@@ -811,7 +811,8 @@ end;
 // Loads creature, item, and placeable data from the specified .key file into
 // the specified lists.
 //
-// For more info on BioWare file formats, check out http://nwn.bioware.com/developers
+// For more info on BioWare file formats and NWN development, see:
+// https://github.com/Carcerian/LSSGEE or https://neverwintervault.org
 //
 // If someone wants to make this more general (for use outside the Script Generator,
 // maybe a backport into BioSearcher?), the likely parts to change are the parameters

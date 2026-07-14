@@ -892,7 +892,7 @@ object helpdoc: Thelpdoc
     Hint = 'Link to the Vault'
     Top = 288
     Width = 432
-    Caption = 'http://nwvault.ign.com/View.php?view=User.EntriesListing&id=68829'
+    Caption = 'https://neverwintervault.org/users/carcerian'
     Font.Color = clPurple
     Font.Height = -15
     Font.Name = 'Arial'
@@ -921,7 +921,7 @@ object helpdoc: Thelpdoc
     Hint = 'Link to the Vault'
     Top = 328
     Width = 424
-    Caption = 'http://nwvault.ign.com/View.php?view=User.EntriesListing&id=4683'
+    Caption = 'https://neverwintervault.org/project/nwn1/other/tool/ls-tk-script-generator'
     Font.Color = clPurple
     Font.Height = -15
     Font.Name = 'Arial'

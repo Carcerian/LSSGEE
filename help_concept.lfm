@@ -45,15 +45,13 @@ object concept_help: Tconcept_help
       ''
       'A common problem with ResRefs is that they can be tricky to find. One reliable method is to place an object in an area, then check that object''s properties. The easily messed up method is to edit the palette entry itself. The problem here is that you must choose "Edit", not "Edit Copy". The problem is compounded for the standard palette because there is no "Edit" option there, only "Edit Copy" (which is no good for finding the ResRef). Why is "Edit Copy" bad? Because that means you are creating a new palette entry, which must have its own unique ResRef. The Toolset knows this and automatically generates a new ResRef before giving you a chance to edit it.'
       ''
-      'For further information, check the Lexicon or the BioWare forums.'
-      'Lexicon 1.69:'
-      '* http://palmergames.com/Lexicon/Lexicon_1_69.html'
-      'Lexicon 1.68:'
-      '* http://www.nwnlexicon.com/'
-      'New BioWare scripting forum:'
-      '* http://social.bioware.com/forum/1/category/192/index'
-      'Old BioWare scripting forum:'
-      '* http://nwn.bioware.com/forums/viewforum.html?forum=47'
+      'For further information, check the Lexicon or NWN community resources.'
+      'NWN Lexicon:'
+      '* https://www.nwnlexicon.com/'
+      'NWN Vault (Downloads & Community):'
+      '* https://neverwintervault.org'
+      'NWN Community Hub:'
+      '* https://neverwintervault.org/forum'
     )
     ParentFont = False
     ReadOnly = True
