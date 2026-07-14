@@ -38,7 +38,7 @@ interface
 uses
   {Windows,} {Messages, SysUtils, Classes, Graphics,} Controls, Forms, {Dialogs,}
   ExtCtrls, StdCtrls, {ShellAPI, jpeg,} Buttons,
-  LResources, LCLIntf, ClipBrd;
+  LResources, LCLIntf, ClipBrd, Dialogs, Classes;
 
 type
 
@@ -48,29 +48,27 @@ type
     // Form elements
     Image1: TImage;
     Label1: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
     Label14: TLabel;
     Label2: TLabel;
-    Label21b: TLabel;
     Label3: TLabel;
     TheLabel4: TLabel;
     Panel1: TPanel;
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
-    Label8: TLabel;
     Label9: TLabel;
-    Label10: TLabel;
-    Label11: TLabel;
-    Label12: TLabel;
     Label13: TLabel;
     Label16: TLabel;
     Label17: TLabel;
     Image3: TImage;
     BitBtn1: TBitBtn;
     Image2: TImage;
-    Label21: TLabel;
     // Event handlers
     procedure Image3Click(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+    procedure Label7Click(Sender: TObject);
     procedure LabelHTMLClick(Sender: TObject);
     procedure LabelEmailClick(Sender: TObject);
   end;
@@ -94,6 +92,16 @@ begin
     if not OpenURL(Image3.Hint) then
         // Backup plan: copy the address.
         Clipboard.AsText := Image3.Hint;
+end;
+
+procedure Thelpdoc.Label1Click(Sender: TObject);
+begin
+
+end;
+
+procedure Thelpdoc.Label7Click(Sender: TObject);
+begin
+
 end;
 
 

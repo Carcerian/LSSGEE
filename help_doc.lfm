@@ -1,7 +1,7 @@
 object helpdoc: Thelpdoc
-  Left = 447
+  Left = 695
   Height = 450
-  Top = 149
+  Top = 254
   Width = 550
   ActiveControl = Panel1
   BorderStyle = bsDialog
@@ -13,7 +13,7 @@ object helpdoc: Thelpdoc
   Font.Height = -11
   Font.Name = 'Arial'
   Position = poMainFormCenter
-  LCLVersion = '0.9.30'
+  LCLVersion = '4.8.0.0'
   object Image1: TImage
     Left = 8
     Height = 222
@@ -875,24 +875,25 @@ object helpdoc: Thelpdoc
   end
   object Label1: TLabel
     Left = 8
-    Height = 19
+    Height = 17
     Top = 272
-    Width = 355
-    Caption = 'The Krit''s NWN creations can be found at this location:'
+    Width = 165
+    Caption = 'LS ScriptGen EE Github: '
     Font.Color = clRed
     Font.Height = -15
     Font.Name = 'Arial'
     ParentColor = False
     ParentFont = False
+    OnClick = Label1Click
   end
   object Label2: TLabel
     Cursor = crHandPoint
-    Left = 40
-    Height = 19
+    Left = 16
+    Height = 17
     Hint = 'Link to the Vault'
     Top = 288
-    Width = 432
-    Caption = 'https://neverwintervault.org/users/carcerian'
+    Width = 203
+    Caption = 'github.com/Carcerian/LSSGEE'
     Font.Color = clPurple
     Font.Height = -15
     Font.Name = 'Arial'
@@ -904,10 +905,10 @@ object helpdoc: Thelpdoc
   end
   object Label3: TLabel
     Left = 8
-    Height = 19
+    Height = 17
     Top = 312
-    Width = 367
-    Caption = 'Lilac Soul''s NWN creations can be found at this location:'
+    Width = 141
+    Caption = 'NeverwinterVault.Org:'
     Font.Color = clRed
     Font.Height = -15
     Font.Name = 'Arial'
@@ -916,39 +917,14 @@ object helpdoc: Thelpdoc
   end
   object TheLabel4: TLabel
     Cursor = crHandPoint
-    Left = 40
-    Height = 19
+    Left = 16
+    Height = 17
     Hint = 'Link to the Vault'
-    Top = 328
-    Width = 424
-    Caption = 'https://neverwintervault.org/project/nwn1/other/tool/ls-tk-script-generator'
+    Top = 336
+    Width = 582
+    Caption = 'neverwintervault.org/project/nwnee/other/tool/lilac-souls-script-generator-enhanced-edition'
     Font.Color = clPurple
     Font.Height = -15
-    Font.Name = 'Arial'
-    ParentColor = False
-    ParentFont = False
-    ParentShowHint = False
-    ShowHint = True
-    OnClick = LabelHTMLClick
-  end
-  object Label11: TLabel
-    Left = 360
-    Height = 14
-    Top = 168
-    Width = 165
-    Caption = 'Icon design obtained for free from'
-    ParentColor = False
-  end
-  object Label12: TLabel
-    Cursor = crHandPoint
-    Left = 360
-    Height = 15
-    Hint = 'Please support these guys!'
-    Top = 184
-    Width = 148
-    Caption = 'http://www.coolarchive.com'
-    Font.Color = clPurple
-    Font.Height = -12
     Font.Name = 'Arial'
     ParentColor = False
     ParentFont = False
@@ -960,7 +936,7 @@ object helpdoc: Thelpdoc
     Left = 320
     Height = 14
     Top = 208
-    Width = 188
+    Width = 187
     Caption = 'Logo by Mokah, The Grumpy Strumpet:'
     ParentColor = False
   end
@@ -970,7 +946,7 @@ object helpdoc: Thelpdoc
     Height = 15
     Hint = 'Link to The Grumpy Strumpet'
     Top = 224
-    Width = 196
+    Width = 195
     Caption = 'http://www.thegrumpystrumpet.com/'
     Font.Color = clPurple
     Font.Height = -12
@@ -989,7 +965,6 @@ object helpdoc: Thelpdoc
     Top = 350
     Width = 94
     AutoSize = True
-    OnClick = Image3Click
     ParentShowHint = False
     Picture.Data = {
       1754506F727461626C654E6574776F726B47726170686963553B000089504E47
@@ -1470,6 +1445,7 @@ object helpdoc: Thelpdoc
       895384A7330000000049454E44AE426082
     }
     ShowHint = True
+    OnClick = Image3Click
   end
   object Image2: TImage
     Left = 320
@@ -1505,110 +1481,60 @@ object helpdoc: Thelpdoc
       FFBFFFFFFFBFFFFF
     }
   end
-  object Label21: TLabel
-    Left = 100
-    Height = 14
-    Top = 248
-    Width = 250
-    Caption = 'Main screen art by Martin Verna (Doconicus). Email:'
-    ParentColor = False
-    ParentShowHint = False
-    ShowHint = True
-  end
-  object Label21b: TLabel
-    Cursor = crHandPoint
-    Left = 360
-    Height = 14
-    Hint = 'Send email'
-    Top = 248
-    Width = 131
-    Caption = 'mverna@medexpress.com'
-    Font.Color = clPurple
-    Font.Height = -11
-    Font.Name = 'Arial'
-    ParentColor = False
-    ParentFont = False
-    ParentShowHint = False
-    ShowHint = True
-    OnClick = LabelEmailClick
-  end
   object Panel1: TPanel
     Left = 335
     Height = 153
     Top = 8
     Width = 200
     BorderStyle = bsSingle
-    ClientHeight = 151
-    ClientWidth = 198
+    ClientHeight = 149
+    ClientWidth = 196
     Color = 9739936
     Font.Color = clMaroon
     Font.Height = -11
     Font.Name = 'Arial'
+    ParentBackground = False
     ParentColor = False
     ParentFont = False
     TabOrder = 0
     object Label5: TLabel
-      Left = 16
+      Left = 48
       Height = 14
       Top = 8
-      Width = 94
-      Caption = 'Version TK.1 of the'
+      Width = 99
+      Caption = 'Version Arcane v1.1'
       ParentColor = False
     end
     object Label6: TLabel
-      Left = 16
+      Left = 40
       Height = 14
       Top = 24
-      Width = 108
-      Caption = 'NWN Script Generator'
+      Width = 111
+      Caption = 'LS Script Generator EE'
       ParentColor = False
     end
     object Label7: TLabel
       Left = 16
       Height = 14
-      Top = 104
-      Width = 144
-      Caption = 'Originally by: Lilac Soul, a.k.a.'
-      ParentColor = False
-    end
-    object Label8: TLabel
-      Left = 16
-      Height = 14
       Top = 120
-      Width = 78
-      Caption = 'Carsten Hjorthøj'
+      Width = 154
+      Caption = 'Originally by: Lilac Soul, The Krit'
       ParentColor = False
+      OnClick = Label7Click
     end
     object Label9: TLabel
-      Left = 16
+      Left = 24
       Height = 14
       Top = 62
-      Width = 173
-      Caption = 'Revised and maintained by: The Krit'
+      Width = 135
+      Caption = 'Updated to EE by: Carcerian'
       ParentColor = False
-    end
-    object Label10: TLabel
-      Cursor = crHandPoint
-      Left = 16
-      Height = 14
-      Hint = 'Send email'
-      Top = 136
-      Width = 97
-      Caption = 'lilacsoul@gmail.com'
-      Font.Color = clPurple
-      Font.Height = -11
-      Font.Name = 'Arial'
-      ParentColor = False
-      ParentFont = False
-      ParentShowHint = False
-      ShowHint = True
-      OnClick = LabelEmailClick
     end
     object Label13: TLabel
-      Left = 16
+      Left = 32
       Height = 14
       Top = 40
-      Width = 118
+      Width = 124
       Caption = 'Released: July 14th, 2026'
       Font.Color = clMaroon
       Font.Height = -11
@@ -1618,12 +1544,12 @@ object helpdoc: Thelpdoc
     end
     object Label14: TLabel
       Cursor = crHandPoint
-      Left = 16
-      Height = 14
+      Left = 8
+      Height = 28
       Hint = 'Send email'
       Top = 79
-      Width = 108
-      Caption = 'The_Krit@hotmail.com'
+      Width = 178
+      Caption = 'neverwintervault.org/tags/carcerian'#13#10'https://github.com/Carcerian/LSSGEE'
       Font.Color = clPurple
       Font.Height = -11
       Font.Name = 'Arial'
@@ -1664,5 +1590,30 @@ object helpdoc: Thelpdoc
     ParentFont = False
     Spacing = 20
     TabOrder = 1
+  end
+  object Label12: TLabel
+    Cursor = crHandPoint
+    Left = 360
+    Height = 15
+    Hint = 'Please support these guys!'
+    Top = 184
+    Width = 147
+    Caption = 'http://www.coolarchive.com'
+    Font.Color = clPurple
+    Font.Height = -12
+    Font.Name = 'Arial'
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = LabelHTMLClick
+  end
+  object Label11: TLabel
+    Left = 360
+    Height = 14
+    Top = 168
+    Width = 164
+    Caption = 'Icon design obtained for free from'
+    ParentColor = False
   end
 end
