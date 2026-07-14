@@ -143,12 +143,10 @@
       <Unit0>
         <Filename Value="Scriptgen.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="94"/>
         <CursorPos Y="128"/>
         <UsageCount Value="22"/>
-        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="start.pas"/>
@@ -156,9 +154,10 @@
         <ComponentName Value="main"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="1401"/>
-        <CursorPos X="19" Y="1418"/>
+        <TopLine Value="246"/>
+        <CursorPos Y="203"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -738,8 +737,6 @@
       <Unit73>
         <Filename Value="constants.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="171"/>
-        <CursorPos X="29" Y="183"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit73>
@@ -797,11 +794,10 @@
         <Filename Value="biofiles.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BioFiles"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="491"/>
         <CursorPos X="15" Y="507"/>
         <UsageCount Value="22"/>
-        <Loaded Value="True"/>
       </Unit80>
       <Unit81>
         <Filename Value="sqlitegen.pas"/>
